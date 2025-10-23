@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projecto web Boostrap</title>
-  <meta name="description" content="Página web responsiva construida con Bootstrap 5. Incluye navbar, grid, componentes, formularios y carrusel." />
-  <meta name="author" content="Tu Nombre" />
-  <meta name="theme-color" content="#0d6efd" />
+  <title>Pagina web Ricardo Castillo</title>
+  <meta name="description" content="Página web responsiva construida con Bootstrap." />
+  <meta name="author" content="Ricardo Castillo" />
+  <meta name="theme-color" content="#4d6efd" />
 
-  <!-- Open Graph básico -->
-  <meta property="og:title" content="Sitio Bootstrap – Proyecto Curso" />
-  <meta property="og:description" content="Demostración completa de Bootstrap: grid, componentes, responsividad." />
+  <!-- Open Graph  -->
+  <meta property="og:title" content="Presentacion 2/ Proyecto integrador" />
+  <meta property="og:description" content="Presentacion de Bootstrap: grid, componentes, responsividad." />
   <meta property="og:type" content="website" />
 
   <!-- Bootstrap CSS (CDN) -->
@@ -20,21 +20,21 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
     crossorigin="anonymous"
   />
-  <!-- Bootstrap Icons -->
+  <!-- Bootstrap Iconos -->
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
   />
-  <!-- CSS propio -->
+  <!-- CSS -->
   <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
 
 <body>
-  <!-- ====== Header / Navbar ====== -->
+  <!-- Header / Navbar  -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top" aria-label="Navbar principal">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="#inicio">Ricardo Projecto web</a>
+        <a class="navbar-brand fw-bold" href="#inicio">Presentacion 2</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
                 aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegación">
           <span class="navbar-toggler-icon"></span>
@@ -53,15 +53,15 @@
     </nav>
   </header>
 
-  <!-- ====== Sección 1: Héroe (bienvenida con imagen + texto alineado) ====== -->
+  <!--  Sección 1:  bienvenida a la pagina  -->
   <section id="inicio" class="py-5 bg-light">
     <div class="container">
       <div class="row align-items-center g-4">
         <div class="col-12 col-lg-6">
-          <h1 class="display-5 fw-bold">Projecto Web Boostrap Ricardo</h1
+          <h1 class="display-5 fw-bold">Ricardo Castillo Web Developer </h1>
           <p class="lead mb-4">
-            Interfaz cohesiva, accesible y 100% responsiva. Esta página demuestra
-            grid, utilidades, componentes y buenas prácticas para un proyecto académico/profesional.
+            Soy un programador apasionado por el desarollo web y la programacion, con experiencia en la creacion de aplicaciones y sitios Web   
+            Interactivos y fucionales. Me gusta aprender sobre nuevas tecnologias y lenguajes, junto con resolver problemas de manera eficiente.
           </p>
 
           <!-- Componente: Botones -->
@@ -69,142 +69,222 @@
             <a class="btn btn-primary btn-lg" href="#servicios">
               <i class="bi bi-grid-3x3-gap"></i> Ver servicios
             </a>
-            <button class="btn btn-outline-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#demoModal">
-              <i class="bi bi-play-circle"></i> Ver modal
-            </button>
           </div>
 
-          <!-- Componente: Alert dismissible -->
+          <!-- Componente: Alerta  -->
           <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
-            <strong>Listo:</strong> Este aviso usa la API de <em>alert</em> de Bootstrap y puede cerrarse.
+            <strong>Listo:</strong>  <em></em> .
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
           </div>
         </div>
 
         <div class="col-12 col-lg-6">
-          <img class="img-fluid rounded-4 shadow-sm" src="../assets/img/hero.jpg" alt="Ilustración de diseño responsivo" />
+          <img class="img-fluid rounded-4 shadow-sm" src="../assets/img/hero.jpg" alt="Imagen principal" />
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ====== Sección 2: Información/Servicios (grid con filas y columnas) ====== -->
-  <section id="servicios" class="py-5">
-    <div class="container">
-      <!-- Breadcrumb (migas de pan) -->
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb mb-4">
-          <li class="breadcrumb-item"><a href="#inicio">Inicio</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Servicios</li>
-        </ol>
-      </nav>
+  <!-- Información/Servicios  -->
+<section id="servicios" class="py-5">
+  <div class="container">
+    <!-- Breadcrumb  -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item"><a href="#inicio">Inicio</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Servicios</li>
+      </ol>
+    </nav>
 
-      <header class="mb-4">
-        <h2 class="h1 fw-semibold">Servicios</h2>
-        <p class="text-secondary">Distribución con grid de Bootstrap y tarjetas (cards).</p>
-      </header>
+    <header class="mb-4 text-center">
+      <h2 class="h1 fw-semibold">Servicios</h2>
+      <p class="text-secondary">
+        A continuación podrá encontrar los servicios que brindamos a nuestros clientes.
+      </p>
+      <!-- Botón para mostrar el modal -->
+      <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#demoModal">
+        <i class="bi bi-lightbulb"></i> Ver nuestra metodología
+      </button>
+    </header>
 
-      <div class="row g-4">
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm">
-            <img src="../assets/img/servicio-1.jpg" class="card-img-top" alt="Servicio 1" />
-            <div class="card-body">
-              <h3 class="card-title h5">Diseño Responsivo</h3>
-              <p class="card-text">Layout fluido con breakpoints de Bootstrap y utilidades de espaciado.</p>
-              <a href="#portafolio" class="btn btn-primary btn-sm">
-                <i class="bi bi-eye"></i> Ver ejemplos
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm">
-            <img src="../assets/img/servicio-2.jpg" class="card-img-top" alt="Servicio 2" />
-            <div class="card-body">
-              <h3 class="card-title h5">Componentes UI</h3>
-              <p class="card-text">Botones, tarjetas, modales, alerts, formularios y carruseles.</p>
-              <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#demoModal">
-                <i class="bi bi-box-arrow-up-right"></i> Probar modal
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm">
-            <img src="../assets/img/servicio-3.jpg" class="card-img-top" alt="Servicio 3" />
-            <div class="card-body">
-              <h3 class="card-title h5">Buenas Prácticas</h3>
-              <p class="card-text">Código semántico, accesible, y separado en CSS/JS propios.</p>
-              <a href="#contacto" class="btn btn-outline-secondary btn-sm">
-                <i class="bi bi-chat-dots"></i> Contáctanos
-              </a>
-            </div>
+    <div class="row g-4">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img src="../assets/img/Responsivo.jpg" class="card-img-top" alt="Servicio 1" />
+          <div class="card-body">
+            <h3 class="card-title h5">Diseño Responsivo</h3>
+            <p class="card-text">
+              Creación de páginas web responsivas y atractivas utilizando HTML, CSS, JavaScript y frameworks como Vue y Bootstrap.
+            </p>
           </div>
         </div>
       </div>
 
-    </div>
-  </section>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img src="../assets/img/automatizacion.jpg" class="card-img-top" alt="Servicio 2" />
+          <div class="card-body">
+            <h3 class="card-title h5">Automatización de tareas</h3>
+            <p class="card-text">
+              Creación de scripts para automatizar procesos repetitivos, análisis de datos y manejo de documentos.
+            </p>
+          </div>
+        </div>
+      </div>
 
-  <!-- ====== Sección 3: Portafolio (ejemplo grid responsive) ====== -->
-  <section id="portafolio" class="py-5 bg-light">
-    <div class="container">
-      <header class="mb-4 text-center">
-        <h2 class="h1 fw-semibold">Portafolio</h2>
-        <p class="text-secondary mb-0">Distribución en rejilla con columnas variables por breakpoint.</p>
-      </header>
-
-      <div class="row g-3">
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="ratio ratio-4x3 bg-body-tertiary rounded-3"></div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="ratio ratio-4x3 bg-body-tertiary rounded-3"></div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="ratio ratio-4x3 bg-body-tertiary rounded-3"></div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-          <div class="ratio ratio-4x3 bg-body-tertiary rounded-3"></div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img src="../assets/img/Mantenimiento.jpg" class="card-img-top" alt="Servicio 3" />
+          <div class="card-body">
+            <h3 class="card-title h5">Actualización de páginas web</h3>
+            <p class="card-text">
+              Mejora, actualización y optimización de páginas web existentes.
+            </p>
+            <a href="#contacto" class="btn btn-outline-secondary btn-sm">
+              <i class="bi bi-chat-dots"></i> Contacto
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ====== Sección 4: Carrusel (componente) + Equipo ====== -->
+<!-- Modal -->
+<div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="demoModalLabel">Nuestra metodología</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        En nuestro proceso de desarrollo, comenzamos con la planificación y el diseño de las páginas,
+        definiendo los requisitos y creando bocetos visuales.
+        Luego, estructuramos las páginas utilizando Bootstrap para garantizar la responsividad y Vue
+        para agregar interactividad y funciones dinámicas.
+        Durante la fase de desarrollo, implementamos el código HTML, CSS y los componentes Vue,
+        asegurándonos de que todo funcione correctamente en diferentes dispositivos y navegadores.
+        Posteriormente, realizamos pruebas para detectar y corregir errores, optimizamos el rendimiento
+        y la experiencia del usuario, y finalmente desplegamos la página en un servidor.
+        Después del despliegue, realizamos un mantenimiento continuo, recogiendo feedback y mejorando
+        las páginas según las necesidades del proyecto.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <a href="#contacto" class="btn btn-primary">Contáctanos</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Portafolio grids -->
+<section id="portafolio" class="py-5 bg-light">
+  <div class="container">
+    <header class="mb-4 text-center">
+      <h2 class="h1 fw-semibold">Portafolio</h2>
+      <p class="text-secondary mb-0">Clientes que confian en nosotros</p>
+    </header>
+
+    <div class="row g-3">
+      <!-- Proyecto 1 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card h-100">
+          <div class="ratio ratio-4x3">
+            <img src="../assets/img/nutrivida.png" class="card-img-top rounded-3" alt="Proyecto 1">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">NutriParaLaVida</h5>
+            <p class="card-text">Sistema de gestión nutricional y seguimiento de pacientes
+.</p>
+            <a href="https://nutriparalavida.com/productos" class="btn btn-primary btn-sm">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto 2 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card h-100">
+          <div class="ratio ratio-4x3">
+            <img src="../assets/img/uniformes.png" class="card-img-top rounded-3" alt="Proyecto 2">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Uniformes Centroamericanos S.A </h5>
+            <p class="card-text">Soliciones textiles, uniformes y una amplia gama de productos textiles.</p>
+            <a href="https://uniformescentroamericanos.com/" class="btn btn-primary btn-sm">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto 3 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card h-100">
+          <div class="ratio ratio-4x3">
+            <img src="../assets/img/estebancoach.png" class="card-img-top rounded-3" alt="Proyecto 3">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">CoachEsteban.com</h5>
+            <p class="card-text">Plataforma de coaching y desarrollo personal.</p>
+            <a href="https://www.coachesteban.com/" class="btn btn-primary btn-sm">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto 4 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="card h-100">
+          <div class="ratio ratio-4x3">
+            <img src="../assets/img/hojancha.png" class="card-img-top rounded-3" alt="Proyecto 4">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Somos Hojancha</h5>
+            <p class="card-text">Permite descubrir, revelar y proyectar todas las bellezas que ofrece nuestro cantón para que aquellos turistas que no conocen se animen a visitarnos.</p>
+            <a href="https://somoshojancha.com/" class="btn btn-primary btn-sm">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Carrusel -->
   <section class="py-5" id="equipo">
     <div class="container">
       <div class="row g-5 align-items-center">
         <div class="col-12 col-lg-5">
           <h2 class="h1 fw-semibold">Testimonios</h2>
-          <p class="text-secondary">Carrusel con controles y efecto desvanecido.</p>
+          <p class="text-secondary">Puede encontrar comentarios sobre nuestros proyectos.</p>
 
           <!-- Carrusel -->
-          <div id="testimoniosCarousel" class="carousel slide carousel-fade rounded-3 shadow-sm overflow-hidden">
+           
+            <div id="testimoniosCarousel" class="carousel slide carousel-fade rounded-3 shadow-sm overflow-hidden" data-bs-ride="carousel" data-bs-interval="3000">
+            
             <div class="carousel-inner">
+
               <div class="carousel-item active">
-                <img src="../assets/img/testimonio-1.jpg" class="d-block w-100" alt="Cliente 1" />
+                <img src="../assets/img/testimonio-1.png" class="d-block w-100" alt="Cliente 1" />
               </div>
               <div class="carousel-item">
-                <img src="../assets/img/testimonio-2.jpg" class="d-block w-100" alt="Cliente 2" />
+                <img src="../assets/img/testimonio-2.png" class="d-block w-100" alt="Cliente 2" />
               </div>
               <div class="carousel-item">
-                <img src="../assets/img/testimonio-3.jpg" class="d-block w-100" alt="Cliente 3" />
+                <img src="../assets/img/testimonio-3.png" class="d-block w-100" alt="Cliente 3" />
               </div>
             </div>
+            
             <button class="carousel-control-prev" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="prev" aria-label="Anterior">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#testimoniosCarousel" data-bs-slide="next" aria-label="Siguiente">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              
             </button>
           </div>
         </div>
 
         <div class="col-12 col-lg-7">
-          <h3 class="h4">Nuestro equipo</h3>
+          <h3 class="h4">Nuestros colaboradores</h3>
           <div class="row g-4">
             <div class="col-12 col-md-6">
               <div class="d-flex gap-3 align-items-center p-3 border rounded-3">
@@ -228,8 +308,8 @@
               <div class="d-flex gap-3 align-items-center p-3 border rounded-3">
                 <i class="bi bi-person-circle fs-1 text-primary"></i>
                 <div>
-                  <div class="fw-semibold">Juan Pérez</div>
-                  <div class="text-secondary small">Backend</div>
+                  <div class="fw-semibold">David Salazar</div>
+                  <div class="text-secondary small">Backend/Fronend/AI Automatizacion</div>
                 </div>
               </div>
             </div>
@@ -237,48 +317,26 @@
               <div class="d-flex gap-3 align-items-center p-3 border rounded-3">
                 <i class="bi bi-person-circle fs-1 text-primary"></i>
                 <div>
-                  <div class="fw-semibold">Laura Gómez</div>
-                  <div class="text-secondary small">QA/Testing</div>
+                  <div class="fw-semibold">Ricardo Castillo</div>
+                  <div class="text-secondary small">QA/Testing/PO</div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Botón que dispara modal (componente) -->
-          <button class="btn btn-primary mt-4" data-bs-toggle="modal" data-bs-target="#demoModal">
-            <i class="bi bi-info-circle"></i> Conocer proceso
-          </button>
+
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ====== Modal (componente) ====== -->
-  <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="demoModalLabel">Nuestra metodología</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-        </div>
-        <div class="modal-body">
-          Trabajamos con Git Flow, revisión de código, CI/CD y pruebas automatizadas.
-          Este modal es un ejemplo de componente de Bootstrap con foco accesible.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <a href="#contacto" class="btn btn-primary">Contáctanos</a>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- ====== Sección 5: Formulario de contacto (componente) ====== -->
+  <!-- Formulario de contacto   -->
   <section id="contacto" class="py-5 bg-light">
     <div class="container">
       <header class="mb-4 text-center">
         <h2 class="h1 fw-semibold">Contacto</h2>
-        <p class="text-secondary">Formulario con validación nativa de Bootstrap.</p>
+        <p class="text-secondary">Formulario para solicitar servicios o consultas.</p>
       </header>
 
       <div class="row justify-content-center">
@@ -316,12 +374,12 @@
     </div>
   </section>
 
-  <!-- ====== Footer (enlaces + redes con iconografía, sin imágenes) ====== -->
+  <!--  Footer   -->
   <footer class="py-4 bg-dark text-light">
     <div class="container">
       <div class="row align-items-center gy-3">
         <div class="col-12 col-md">
-          <span class="small">&copy; <span id="year"></span>Projecto web Boostrap Ricardo</span>
+          <span class="small">&copy; <span id="year"></span>Presentacion 2 / Proyecto integrador</span>
         </div>
         <div class="col-12 col-md-auto">
           <ul class="list-inline mb-0">
@@ -341,11 +399,9 @@
   </footer>
 
   <!-- Bootstrap JS (CDN) + Popper -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-HoA5o4F2kxt8q0iJm6m3y9H5WZk5nJm9vN6o9v4oQXKf7Gv5Y6h4m2E6s8N0xw2K"
-    crossorigin="anonymous"></script>
-  <!-- JS propio -->
-  <script src="../js/main.js"></script>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 </html>

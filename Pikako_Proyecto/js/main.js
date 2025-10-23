@@ -1,8 +1,7 @@
-// Año dinámico en el footer
+// Año en el footer
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Validación de formularios con Bootstrap
-// (Patrón oficial de docs: https://getbootstrap.com/docs/5.3/forms/validation/)
+// Formularios validacion
 (() => {
   'use strict';
   const forms = document.querySelectorAll('.needs-validation');

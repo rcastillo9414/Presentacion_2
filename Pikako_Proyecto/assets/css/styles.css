@@ -1,7 +1,7 @@
-/* Estilos mínimos y claros. Bootstrap ya cubre la mayoría. */
+/* Estilos */
 
 :root {
-    --brand-gradient: linear-gradient(135deg, #0d6efd, #6ea8fe);
+    --brand-gradient: linear-gradient(135deg, rgb(1, 5, 1), #6efeb6);
   }
   
   html {
@@ -13,13 +13,13 @@
   }
   
   /* Ejemplo de “media query” adicional (además de las utilidades Bootstrap) */
-  @media (max-width: 576px) {
+  @media (max-width: 575px) {
     .display-5 {
       font-size: 2rem;
     }
   }
   
-  /* Bloques decorativos del portafolio (placeholders) */
+  /* Portafolio */
   #portafolio .ratio {
     background-image: var(--brand-gradient);
     opacity: 0.15;
@@ -28,5 +28,5 @@
   /* Footer */
   footer .list-inline-item a:hover {
     text-decoration: underline;
-  }
+  } 
   
