@@ -1,32 +1,40 @@
-/* Estilos */
-
+/* Variables de color*/
 :root {
-    --brand-gradient: linear-gradient(135deg, rgb(1, 5, 1), #6efeb6);
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  header .navbar-brand {
-    letter-spacing: 0.5px;
-  }
-  
-  /* Ejemplo de “media query” adicional (además de las utilidades Bootstrap) */
-  @media (max-width: 575px) {
-    .display-5 {
-      font-size: 2rem;
-    }
-  }
-  
-  /* Portafolio */
-  #portafolio .ratio {
-    background-image: var(--brand-gradient);
-    opacity: 0.15;
-  }
-  
-  /* Footer */
-  footer .list-inline-item a:hover {
-    text-decoration: underline;
-  } 
-  
+  --color-primario: #eff0ef;      /* Color principal */
+  --color-secundario: #01401a;    /* Color secundario */
+  --color-fondo: #ffffff;         /* Fondo general */
+  --color-texto: #333333;         /* Color de texto principal */
+  --color-enlace: #1a73e8;        /* Color de los enlaces */
+  --color-enlace-hover: #0d47a1;  /* Color enlaces al pasar el mouse */
+}
+
+/* Aplicación de colores*/
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+}
+
+header, footer {
+  background-color: var(--color-secundario);
+  color: var(--color-fondo);
+}
+
+header .navbar-brand {
+  color: var(--color-primario);
+}
+
+a {
+  color: var(--color-enlace);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-enlace-hover);
+  text-decoration: underline;
+}
+
+/* Portafolio */
+#portafolio .ratio {
+  background-image: linear-gradient(135deg, var(--color-secundario), var(--color-primario));
+  opacity: 0.15;
+}
